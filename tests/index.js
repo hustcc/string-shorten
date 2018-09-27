@@ -20,6 +20,8 @@ describe('shorten', function() {
   it('4. long string', function() {
     var s = 'This page provides a Javascript implementation CRC32 (Cyclic Redundancy Checksum) calculator. CRC32 (Cyclic Redundancy Checksum) is a fast and efficient algorithm to check the integrity of the data. It returns a 32-bit integer (signed or unsigned). It can be considered a weak type of Cryptographic hash functions (such as MD5). The cryptographic has functions normally has the following 4 goals.';
     expect(shorten(s)).toBe('6ZtPq');
+
+    expect(shorten('Shorten a string with crc32 and radix.')).toBe('e:::%');
   });
 
   it('5. conflict sense', function() {

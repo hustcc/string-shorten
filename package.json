@@ -1,16 +1,21 @@
 {
   "name": "string-shorten",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shorten a string with crc32 and radix.",
   "main": "src/index.js",
   "scripts": {
     "ci": "nyc npm test && nyc report --reporter=lcov",
     "test": "mocha tests/index.js"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "expect": "^23.6.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1"
+  },
   "keywords": [
-    "shorten",
     "string",
+    "shorten",
     "crc32"
   ],
   "repository": {
@@ -22,11 +27,5 @@
   },
   "homepage": "https://github.com/hustcc/string-shorten#readme",
   "author": "hustcc",
-  "license": "MIT",
-  "dependencies": {
-    "coveralls": "^3.0.2",
-    "expect": "^23.6.0",
-    "mocha": "^5.2.0",
-    "nyc": "^13.0.1"
-  }
+  "license": "MIT"
 }
