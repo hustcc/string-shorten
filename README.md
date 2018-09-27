@@ -22,8 +22,7 @@ shorten('世界，你好'); // 'oTM]^'
 shorten('Shorten a string with crc32 and radix.'); // 'e:::%'
 ```
 
-**Warning**: base on crc32 algorithm which has collision probability.
-
+**Warning**: base on crc32 algorithm which has collision probability: `216555` english words, two collisions.
 
 
 ## License
