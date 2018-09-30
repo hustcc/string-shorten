@@ -3,7 +3,7 @@ var shorten = require('..');
 
 describe('shorten', function() {
   it('1. en', function() {
-    expect(shorten('')).toBe('');
+    expect(shorten('')).toBe('0');
     expect(shorten('abc')).toBe('eiZPG');
     expect(shorten('a.b.c')).toBe('M&;yV');
   });
